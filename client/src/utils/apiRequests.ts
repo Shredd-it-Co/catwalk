@@ -28,7 +28,7 @@ export const apiRequest = {
   getProductById: (productId: number): Promise<product> => {
     return requests.get(`/products/${productId}`);
   },
-  getProductStyles: (productId: number): Promise<style> => {
+  getProductStyles: (productId: number): Promise<style[]> => {
     return requests.get(`/products/${productId}/styles`);
   },
   getRelatedProducts: (productId: number): Promise<number[]> => {
